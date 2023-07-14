@@ -27,8 +27,8 @@
             "link": "https://www.youtube-nocookie.com/embed/N-U6AVcIPy4",
             "thumbnail": "https://i3.ytimg.com/vi/N-U6AVcIPy4/maxresdefault.jpg",
             "tags": ["vscode", "tips"],
-            "likes": 0,
-            "unlikes": 0
+            "likes": "199",
+            "unlikes": "40"
         },
         {
             "id": 3,
@@ -57,7 +57,7 @@
             "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
             "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg",
             "tags": ["debounce", "javascript", "tips"],
-            "likes": 0,
+            "likes": "5k",
             "unlikes": 0
         },
         {
@@ -87,7 +87,7 @@
             "link": "https://www.youtube-nocookie.com/embed/34tjWL9wi4g",
             "thumbnail": "https://i3.ytimg.com/vi/34tjWL9wi4g/maxresdefault.jpg",
             "tags": ["react", "router", "javascript"],
-            "likes": 0,
+            "likes": "5k",
             "unlikes": 0
         },
         {
