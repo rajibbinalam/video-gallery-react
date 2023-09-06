@@ -1,21 +1,24 @@
-import React from "react";
-import Home from "./pages/Home";
-import Video from "./pages/Video";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import Add from "./components/pages/Add";
+import Edit from "./components/pages/Edit";
+import Home from "./components/pages/Home";
+import Video from "./components/pages/Video";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/videos/:id" element={<Video />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  );
+    return (
+        <Router>
+            <Navigation />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/videos/:videoId" element={<Video />} />
+                <Route path="/videos/add" element={<Add />} />
+                <Route path="/videos/edit/:videoId" element={<Edit />} />
+            </Routes>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;

@@ -4,44 +4,33 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/favicon.png" />
         <title>Video</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
     </head>
     <body>
         <!-- navigation -->
         <nav class="bg-slate-100 shadow-md">
             <div
-                class="max-w-7xl mx-auto px-5 lg:px-0 flex justify-between py-3"
+                class="max-w-7xl mx-auto px-5 lg:px-0 flex justify-between py-3 items-center"
             >
-                <a href="/">
+                <a href="index.html">
                     <img
                         class="h-10"
                         src="./assets/lws.svg"
                         alt="Learn with Sumit"
                     />
                 </a>
-                <div
-                    class="border border-slate-200 flex items-center bg-white h-10 px-5 rounded-lg text-sm ring-emerald-200"
+                <a
+                    href="add-video.html"
+                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-indigo-500"
                 >
-                    <!-- search -->
-                    <form>
-                        <input
-                            class="outline-none border-none mr-2"
-                            type="search"
-                            name="search"
-                            placeholder="Search"
-                        />
-                    </form>
-                    <img
-                        class="inline h-4 cursor-pointer"
-                        src="./assets/search.svg"
-                        alt="Search"
-                    />
-                </div>
+                    + Add Video
+                </a>
             </div>
         </nav>
 
-        <section class="pt-6 pb-20">
+        <section class="pt-6 pb-20 min-h-[calc(100vh_-_157px)]">
             <div class="mx-auto max-w-7xl px-2 pb-20 min-h-[400px]">
                 <div class="grid grid-cols-3 gap-2 lg:gap-8">
                     <div class="col-span-full w-full space-y-8 lg:col-span-2">
@@ -72,34 +61,35 @@
                                     Uploaded on 23 Nov 2022
                                 </h2>
 
-                                <!-- like/unlike -->
+                                <!-- delete/edit -->
                                 <div class="flex gap-10 w-48">
                                     <div class="flex gap-1">
                                         <div class="shrink-0">
                                             <img
                                                 class="w-5 block"
-                                                src="./assets/like.svg"
-                                                alt="Like"
+                                                src="./assets/edit.svg"
+                                                alt="Edit"
                                             />
                                         </div>
-                                        <div
+                                        <a
+                                            href="add-video.html"
                                             class="text-sm leading-[1.7142857] text-slate-600"
                                         >
-                                            100K
-                                        </div>
+                                            Edit
+                                        </a>
                                     </div>
                                     <div class="flex gap-1">
                                         <div class="shrink-0">
                                             <img
                                                 class="w-5 block"
-                                                src="./assets/unlike.svg"
-                                                alt="Unlike"
+                                                src="./assets/delete.svg"
+                                                alt="Delete"
                                             />
                                         </div>
                                         <div
-                                            class="text-sm leading-[1.7142857] text-slate-600"
+                                            class="text-sm leading-[1.7142857] text-slate-600 cursor-pointer"
                                         >
-                                            100K
+                                            Delete
                                         </div>
                                     </div>
                                 </div>
